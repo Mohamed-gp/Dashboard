@@ -2,5 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-h1{
+body{
+}
+// start nav
+nav{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo{
+    @media (min-width: 768px) {
+        
+        &::before{
+        position: absolute;
+        content: '';
+        bottom: -29px;
+        height: 3px;
+        background-color: black;
+        width: 130%;
+        left: -15%;
+    }
+        &::after{
+            position: absolute;
+            content: '';
+            bottom: -34.5px;
+            height: 3px;
+            background-color: black;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            outline: 5px solid white;
+        }
+    }
+    
+}
+
+.active-page{
+    background-color: rgba(238, 235, 235, 0.657);
+}
+.page{
+    transition-duration: 1s;
+    &:hover{
+        background-color: rgba(238, 235, 235, 0.657);
+    }
+}
+// end nav
+// start righ side header
+.setting-rotate:hover{
+    animation: spin-back 1s linear infinite forwards;
+    -webkit-animation: spin-back 1s linear infinite forwards;
+}
+@keyframes spin-back {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+// start content
+.content {
+    background-color: #f1f5f9;
+    .title{
+        &::before{
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 3px;
+            background-color: white;
+            left: 0;
+            bottom: 0;
+            
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: black;
+            left: 0;
+            bottom: 0;
+
+        }
+    }
+
+
+
+    .main-card{
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+        @media (min-width: 1536px) {
+            width: 30%;
+        }
+    }
 }

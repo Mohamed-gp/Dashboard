@@ -1,15 +1,10 @@
-import './index.scss'
-import Dashboard from './Dashboard/Dashboard'
-
-function App() {
-
+import Dashboard from "./Pages/Dashboard";
+const App = () => {
   return (
     <>
-    <h1>
-    hello world
-    </h1>
+      <Dashboard />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
