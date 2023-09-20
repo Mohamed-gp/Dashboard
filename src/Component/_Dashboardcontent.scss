@@ -1,0 +1,59 @@
+
+.card-one{
+
+    .one{
+        background-color: #eee;
+        background-image: url(../../public/assets/welcome.png);
+        background-repeat: no-repeat;
+        background-size: 120px;
+        background-position: 95% center;
+    }
+    .profile-absolute{
+        top: calc(40% - 24px);
+    }
+    .three{
+        top: 37%;
+    }
+}
+
+.vip-hover {
+    position: relative;
+  }
+  
+  .vip-hover:hover::after {
+    content: "View Plans";
+    position: absolute;
+    top: 150%;
+    width: 150%;
+    background-color: black;
+    left: -25%;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: 14px;
+}
+.vip-hover:hover::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border: 10px solid;
+    border-color: transparent transparent black transparent;
+}
+.statistic-card {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .statistic-card {
+        width: 47%;
+    }
+}

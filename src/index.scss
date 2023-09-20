@@ -107,11 +107,12 @@ nav{
 
     .main-card{
         width: 100%;
+        min-height: 450px;
         @media (min-width: 768px) {
-            width: 45%;
+            width: 49%;
         }
         @media (min-width: 1536px) {
-            width: 30%;
+            width: 33%;
         }
     }
 }

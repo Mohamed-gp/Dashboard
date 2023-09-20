@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="flex items-center justify-between bg-red-500 px-6 py-3">
+      <header className="flex items-center justify-between px-6 py-3">
         <div className="profile flex items-center gap-4 font-bold">
           <div className="img ">
             <img src="../../public/assets/avatar.png" alt="" className="w-12" />
