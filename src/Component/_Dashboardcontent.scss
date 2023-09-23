@@ -57,3 +57,90 @@
         width: 47%;
     }
 }
+.progress-list{
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: '';
+        left: -33px;
+        height: 90%;
+        top: 20px;
+        background-color: #0075ff;
+        width: 4px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+    li::before{
+    position: absolute;
+    content: '';
+    left: -48px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #0075ff;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 1000;
+    border: 3px solid white;
+    outline: 3px solid #0075ff;
+}
+    & li:nth-child(7)::before{
+        animation: flash 1s both infinite linear;
+        -webkit-animation: flash 1s both infinite linear;
+} 
+    & li:last-of-type::before {
+        background-color: white;
+    }
+}
+
+@keyframes flash {
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: #0075ff;
+    }
+}
+
+.reminder{
+    &::before{
+            position: absolute;
+    content: '';
+    left: -48px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #0075ff;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: -9px;
+        height: 100%;
+        width: 3px;
+        background-color: #0075ff;
+    }
+}
