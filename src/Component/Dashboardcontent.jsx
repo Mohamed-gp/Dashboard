@@ -6,9 +6,16 @@ import { FaSpinner } from "react-icons/fa";
 import { PiSigmaThin } from "react-icons/pi";
 import { BiCheckDouble } from "react-icons/bi";
 import { FaXmark } from "react-icons/fa6";
-import { FaSquareFacebook } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaFacebookF,
+  FaYoutube,
+  FaLinkedinIn,
+  FaHeart,
+  FaComment,
+  FaShare,
+} from "react-icons/fa";
 import { useEffect, useState } from "react";
-
 
 const Dashboardcontent = () => {
   useEffect(() => {
@@ -24,7 +31,13 @@ const Dashboardcontent = () => {
         }
       });
     });
-  }, );
+    const savepost = document.querySelector(".save-post")
+    savepost.addEventListener("click",function(){
+      if () {
+        
+      }
+    })
+  });
 
   return (
     <>
@@ -192,7 +205,7 @@ const Dashboardcontent = () => {
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">Changed The Design</p>
                   <p className="text-base text-gray-400">
-                  A Brand New Website Design
+                    A Brand New Website Design
                   </p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
@@ -210,7 +223,7 @@ const Dashboardcontent = () => {
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">Team Increased</p>
                   <p className="text-base text-gray-400">
-                  3 Developers Joined The Team
+                    3 Developers Joined The Team
                   </p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
@@ -228,7 +241,7 @@ const Dashboardcontent = () => {
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">Added Payment Gateway</p>
                   <p className="text-base text-gray-400">
-                  Many New Payment Gateways Added
+                    Many New Payment Gateways Added
                   </p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
@@ -245,9 +258,7 @@ const Dashboardcontent = () => {
               <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 no-underline">
                 <div>
                   <p className="text-lg font-bold">Finish One Framwork</p>
-                  <p className="text-base text-gray-400">
-                    Learn React 
-                  </p>
+                  <p className="text-base text-gray-400">Learn React</p>
                 </div>
                 <div>
                   <BiCheckDouble className="text-3xl text-green-500 " />
@@ -267,9 +278,7 @@ const Dashboardcontent = () => {
               <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 no-underline">
                 <div>
                   <p className="text-lg font-bold">Finish Projects</p>
-                  <p className="text-base text-gray-400">
-                    Finish Portfolio
-                  </p>
+                  <p className="text-base text-gray-400">Finish Portfolio</p>
                 </div>
                 <div>
                   <BiCheckDouble className="text-3xl text-green-500" />
@@ -290,7 +299,7 @@ const Dashboardcontent = () => {
                 <div>
                   <p className="text-lg font-bold">Do Stream</p>
                   <p className="text-base text-gray-400">
-                    Start with My First Stream In Youtube                    
+                    Start with My First Stream In Youtube
                   </p>
                 </div>
                 <div>
@@ -351,7 +360,7 @@ const Dashboardcontent = () => {
               Latest Uploads
             </p>
             <div className="card-container flex flex-col">
-              <div className="card flex items-center justify-between gap-4  py-4 border-b">
+              <div className="card flex items-center justify-between gap-4  border-b py-4">
                 <div className="w-10">
                   <img
                     src="../../public/assets/pdf.svg"
@@ -361,15 +370,13 @@ const Dashboardcontent = () => {
                 </div>
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">my-file.pdf</p>
-                  <p className="text-base text-gray-400">
-                  Elzero
-                  </p>
+                  <p className="text-base text-gray-400">Elzero</p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
-                2.9mb
+                  2.9mb
                 </p>
               </div>
-              <div className="card flex  items-center justify-between gap-4 py-4 border-b">
+              <div className="card flex  items-center justify-between gap-4 border-b py-4">
                 <div className="w-10">
                   <img
                     src="../../public/assets/avi.svg"
@@ -379,15 +386,13 @@ const Dashboardcontent = () => {
                 </div>
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">My-Video-File.avi</p>
-                  <p className="text-base text-gray-400">
-                  Admin
-                  </p>
+                  <p className="text-base text-gray-400">Admin</p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
-                4.9mb
+                  4.9mb
                 </p>
               </div>
-              <div className="card flex items-center justify-between gap-4  py-4 border-b">
+              <div className="card flex items-center justify-between gap-4  border-b py-4">
                 <div className="w-10">
                   <img
                     src="../../public/assets/psd.svg"
@@ -397,15 +402,13 @@ const Dashboardcontent = () => {
                 </div>
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">My-Psd-File.pdf</p>
-                  <p className="text-base text-gray-400">
-                    Mohamed
-                  </p>
+                  <p className="text-base text-gray-400">Mohamed</p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
-                4.5mb
+                  4.5mb
                 </p>
               </div>
-              <div className="card flex  items-center justify-between gap-4  py-4 border-b">
+              <div className="card flex  items-center justify-between gap-4  border-b py-4">
                 <div className="w-10">
                   <img
                     src="../../public/assets/zip.svg"
@@ -415,15 +418,13 @@ const Dashboardcontent = () => {
                 </div>
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">My-Zip-File.pdf</p>
-                  <p className="text-base text-gray-400">
-                    NPC
-                  </p>
+                  <p className="text-base text-gray-400">NPC</p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
                   120byte
                 </p>
               </div>
-              <div className="card flex items-center justify-between gap-4  py-4 border-b">
+              <div className="card flex items-center justify-between gap-4  border-b py-4">
                 <div className="w-10">
                   <img
                     src="../../public/assets/dll.svg"
@@ -433,9 +434,7 @@ const Dashboardcontent = () => {
                 </div>
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">My-DLL-File.pdf</p>
-                  <p className="text-base text-gray-400">
-                    Younes
-                  </p>
+                  <p className="text-base text-gray-400">Younes</p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
                   120gb
@@ -451,9 +450,7 @@ const Dashboardcontent = () => {
                 </div>
                 <div className="flex flex-1 flex-col">
                   <p className="text-lg font-bold ">Amine</p>
-                  <p className="text-base text-gray-400">
-                    V-admin
-                  </p>
+                  <p className="text-base text-gray-400">V-admin</p>
                 </div>
                 <p className="rounded-lg bg-gray-200 px-3 py-1 text-sm font-bold">
                   120tera
@@ -461,11 +458,11 @@ const Dashboardcontent = () => {
               </div>
             </div>
           </div>
-          <div className="main-card rounded-2xl bg-white px-6 py-6 relative">
+          <div className="main-card relative rounded-2xl bg-white px-6 py-6">
             <p className="text-center text-3xl font-bold md:text-left">
-            Last Project Progress
+              Last Project Progress
             </p>
-            <ul className="progress-list flex flex-col gap-7 my-4 text-lg ml-14">
+            <ul className="progress-list my-4 ml-14 flex flex-col gap-7 text-lg">
               <li className="relative">Got The Project</li>
               <li className="relative">Discuss The salary</li>
               <li className="relative">Started The Project</li>
@@ -475,48 +472,195 @@ const Dashboardcontent = () => {
               <li className="relative">Give Project To Client</li>
               <li className="relative">Get Money</li>
             </ul>
-            <div className="img absolute w-44 opacity-50 bottom-10 right-10">
+            <div className="img absolute bottom-10 right-10 w-44 opacity-50">
               <img src="../../public/assets/project.png" alt="project" />
             </div>
           </div>
-          <div className="main-card rounded-2xl bg-white px-6 py-6 relative">
+          <div className="main-card relative rounded-2xl bg-white px-6 py-6">
             <p className="text-center text-3xl font-bold md:text-left">
-            Reminders
+              Reminders
             </p>
-            <div className="flex flex-col my-6 gap-5">
-              <div className="relative reminder ml-14 pl-3">
-                <p className="font-bold text-lg">Check My Tasks List</p>
-                <p className="text-gray-400 text-base">28/09/2022 - 12:00am</p>
+            <div className="my-6 flex flex-col gap-5">
+              <div className="reminder relative ml-14 pl-3">
+                <p className="text-lg font-bold">Check My Tasks List</p>
+                <p className="text-base text-gray-400">28/09/2022 - 12:00am</p>
               </div>
-              <div className="relative reminder ml-14 pl-3 after:bg-green-500 before:bg-green-500">
-                <p className="font-bold text-lg">Check My Tasks List</p>
-                <p className="text-gray-400 text-base">28/09/2022 - 12:00am</p>
+              <div className="reminder relative ml-14 pl-3 before:bg-green-500 after:bg-green-500">
+                <p className="text-lg font-bold">Check My Tasks List</p>
+                <p className="text-base text-gray-400">28/09/2022 - 12:00am</p>
               </div>
-              <div className="relative reminder ml-14 pl-3 after:bg-orange-500 before:bg-orange-500">
-                <p className="font-bold text-lg">Check My Tasks List</p>
-                <p className="text-gray-400 text-base">28/09/2022 - 12:00am</p>
+              <div className="reminder relative ml-14 pl-3 before:bg-orange-500 after:bg-orange-500">
+                <p className="text-lg font-bold">Check My Tasks List</p>
+                <p className="text-base text-gray-400">28/09/2022 - 12:00am</p>
               </div>
-              <div className="relative reminder ml-14 pl-3 before:bg-red-500 after:bg-red-500">
-                <p className="font-bold text-lg">Check My Tasks List</p>
-                <p className="text-gray-400 text-base">28/09/2022 - 12:00am</p>
+              <div className="reminder relative ml-14 pl-3 before:bg-red-500 after:bg-red-500">
+                <p className="text-lg font-bold">Check My Tasks List</p>
+                <p className="text-base text-gray-400">28/09/2022 - 12:00am</p>
               </div>
             </div>
           </div>
           <div className="main-card rounded-2xl bg-white px-6 py-6">
             <p className="text-center text-3xl font-bold md:text-left">
-            Social Media Stats
+              Social Media Stats
             </p>
-            <div className="flex flex-col my-6 gap-6">
-              <div className="facebook bg-blue-50">
-                <div className="logo-icon text-blue-600 ">
-                  <FaSquareFacebook className="text-4xl"/>
+            <div className="my-6 flex flex-col gap-6">
+              <div className="linkedin flex h-14 items-center justify-between bg-blue-50">
+                <div
+                  className="logo-icon flex h-full w-12  items-center justify-center text-blue-600"
+                  style={{ backgroundColor: "#0077B5", color: "white" }}
+                >
+                  <FaLinkedinIn className="text-4xl" />
                 </div>
-                <p className="followers"></p>
-                <p className="follow"></p>
+                <p
+                  className="followers ml-4 flex-1 text-left text-lg"
+                  style={{ color: "#0077B5" }}
+                >
+                  2M Connects
+                </p>
+                <p className="follow mr-4">
+                  <a
+                    href="https://www.linkedin.com/in/mohamed-outerbah-b97469257/"
+                    target="_blank"
+                    className="rounded-lg px-3 py-2 text-lg text-white"
+                    style={{ backgroundColor: "#0077B5" }}
+                  >
+                    Connect
+                  </a>
+                </p>
+              </div>
+              <div className="facebook flex h-14 items-center justify-between bg-blue-50">
+                <div
+                  className="logo-icon flex h-full w-12  items-center justify-center text-blue-600"
+                  style={{ backgroundColor: "#1877F2", color: "white" }}
+                >
+                  <FaFacebookF className="text-4xl" />
+                </div>
+                <p
+                  className="followers ml-4 flex-1 text-left text-lg"
+                  style={{ color: "#1877F2" }}
+                >
+                  5000 Friends
+                </p>
+                <p className="follow mr-4">
+                  <a
+                    href="https://www.linkedin.com/in/mohamed-outerbah-b97469257/"
+                    target="_blank"
+                    className="rounded-lg px-3 py-2 text-lg text-white"
+                    style={{ backgroundColor: "#1877F2" }}
+                  >
+                    Add Friend
+                  </a>
+                </p>
+              </div>
+              <div className="linkedin flex h-14 items-center justify-between bg-blue-50">
+                <div
+                  className="logo-icon flex h-full w-12  items-center justify-center text-blue-600"
+                  style={{ backgroundColor: "#0077B5", color: "white" }}
+                >
+                  <FaLinkedinIn className="text-4xl" />
+                </div>
+                <p
+                  className="followers ml-4 flex-1 text-left text-lg"
+                  style={{ color: "#0077B5" }}
+                >
+                  2M Connects
+                </p>
+                <p className="follow mr-4">
+                  <a
+                    href="https://www.linkedin.com/in/mohamed-outerbah-b97469257/"
+                    target="_blank"
+                    className="rounded-lg px-3 py-2 text-lg text-white"
+                    style={{ backgroundColor: "#0077B5" }}
+                  >
+                    Connect
+                  </a>
+                </p>
+              </div>
+              <div className="facebook flex h-14 items-center justify-between bg-blue-50">
+                <div
+                  className="logo-icon flex h-full w-12  items-center justify-center text-blue-600"
+                  style={{ backgroundColor: "#1877F2", color: "white" }}
+                >
+                  <FaFacebookF className="text-4xl" />
+                </div>
+                <p
+                  className="followers ml-4 flex-1 text-left text-lg"
+                  style={{ color: "#1877F2" }}
+                >
+                  5000 Friends
+                </p>
+                <p className="follow mr-4">
+                  <a
+                    href="https://web.facebook.com/profile.php?id=100009748452803"
+                    className="rounded-lg px-3 py-2 text-lg text-white"
+                    target="_blank"
+                    style={{ backgroundColor: "#1877F2" }}
+                  >
+                    Add Friend
+                  </a>
+                </p>
               </div>
             </div>
           </div>
-          <div className="main-card rounded-2xl bg-white px-6 py-6"></div>
+          <div className="main-card rounded-2xl bg-white px-6 py-6">
+            <p className="text-center text-3xl font-bold md:text-left">
+              Latest Post
+            </p>
+            <div className="flex flex-col gap-6 py-6 ">
+              <div className="flex items-center gap-4">
+                <div className="img w-12">
+                  <img src="../../public/assets/avatar.png" alt="profile" />
+                </div>
+                <div>
+                  <p className="text-lg font-bold ">Outerbah Mohamed</p>
+                  <p className="text-base text-gray-500">About 3 Hours Ago</p>
+                </div>
+              </div>
+              <p className="quote-title text-center text-2xl font-semibold">
+                Limitations of Deception
+              </p>
+              <p className="border-y py-10 text-lg quote-description">
+                You Can Fool All Of The People Some Of The Time, And Some Of The
+                People All Of The Time, But You Can't Fool All Of The People All
+                Of The Time.
+              </p>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <FaHeart className="text-red-500" />
+                  <p className="font-medium">2M</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <FaShare className="" />
+                  <p className="mr-2 font-medium">20</p>
+                  <FaComment className="" />
+                  <p className="font-medium">124</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="main-card rounded-2xl bg-white px-6 py-6">
+            <p className="text-center text-3xl font-bold md:text-left">
+              Edit Post
+            </p>
+            <p className="text-center  text-lg text-gray-400 md:text-left">
+              change your last Post if you want
+            </p>
+            <div className="flex flex-col py-6 gap-4">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="quote-title" className="text-lg">Title :</label>
+                <input type="text" name="" id="quote-title" className="bg-gray-400 rounded-lg py-2 focus:outline-none pl-4" placeholder="Short title better than long try from 6 words to 25" style={{backgroundColor : "#EEEEEE"}}/>
+              </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="quote-description" className="text-lg">Description :</label>
+                <textarea type="text" name="" id="quote-description" className="bg-gray-400 rounded-lg py-2 focus:outline-none pl-4 h-28 resize-none" placeholder="The description should be less than 96 letters and more than 50 letters" style={{backgroundColor : "#EEEEEE"}}/>
+              </div>
+              <div className="flex justify-between">
+                <p className="warning"></p>
+                <p className="text-lg text-white  px-4 rounded 3 cursor-pointer save-post" style={{backgroundColor: "#0D69D5"}}>Save</p>
+    
+              </div>
+            </div>
+          </div>
           <div className="main-card rounded-2xl bg-white px-6 py-6"></div>
         </div>
       </div>
