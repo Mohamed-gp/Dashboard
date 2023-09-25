@@ -144,3 +144,13 @@
         background-color: #0075ff;
     }
 }
+
+// start with table
+.main-card:last-of-type{
+    width: 100% !important;
+    min-height: 550px !important;
+    table{
+     border-spacing: 1023px;
+    }
+    
+}
