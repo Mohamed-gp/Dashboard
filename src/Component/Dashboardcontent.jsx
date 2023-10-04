@@ -31,38 +31,38 @@ const Dashboardcontent = () => {
         }
       });
     });
-    
-  
-  }
+  });
+
+  const [titleoriginal, settitleoriginal] = useState(
+    "Limitations of Deception",
   );
-
-
-  
-  const [titleoriginal,settitleoriginal] = useState("Limitations of Deception")
-  const [descriptionoriginal,setdescriptionoriginal] = useState("You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.")
-  const serbas = document.querySelector(".edited-notation")
+  const [descriptionoriginal, setdescriptionoriginal] = useState(
+    "You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.",
+  );
+  const serbas = document.querySelector(".edited-notation");
   const editqoute = () => {
-      
-    const quoteTitle = document.querySelector(".quote-title")
-      const quoteDescription = document.querySelector(".quote-description")
-      
-        if (quoteTitle.value.length >= 6 && quoteTitle.value.length <= 25) {
-          settitleoriginal(quoteTitle.value);
-          serbas.classList.remove("hidden")
-        } else{
-          quoteTitle.value = null
-          quoteTitle.placeholder = "the title must be from 6 letters to 25"
-        }
-        if (quoteDescription.value.length >= 51 && quoteDescription.value.length <= 95) {
-          setdescriptionoriginal(quoteDescription.value);
-          serbas.classList.remove("hidden")
-        } else{
-          quoteDescription.value = null
-          quoteDescription.placeholder = "the description must be from 51 letters to 95"
-        }
-        
-      
-    }  
+    const quoteTitle = document.querySelector(".quote-title");
+    const quoteDescription = document.querySelector(".quote-description");
+
+    if (quoteTitle.value.length >= 6 && quoteTitle.value.length <= 25) {
+      settitleoriginal(quoteTitle.value);
+      serbas.classList.remove("hidden");
+    } else {
+      quoteTitle.value = null;
+      quoteTitle.placeholder = "the title must be from 6 letters to 25";
+    }
+    if (
+      quoteDescription.value.length >= 51 &&
+      quoteDescription.value.length <= 95
+    ) {
+      setdescriptionoriginal(quoteDescription.value);
+      serbas.classList.remove("hidden");
+    } else {
+      quoteDescription.value = null;
+      quoteDescription.placeholder =
+        "the description must be from 51 letters to 95";
+    }
+  };
   return (
     <>
       <div className="content px-4 py-5">
@@ -639,12 +639,14 @@ const Dashboardcontent = () => {
                   <p className="text-lg font-bold ">Outerbah Mohamed</p>
                   <p className="text-base text-gray-500">About 3 Hours Ago</p>
                 </div>
-                <p className="edited-notation hidden text-red-600 text-lg">Edited</p>
+                <p className="edited-notation hidden text-lg text-red-600">
+                  Edited
+                </p>
               </div>
               <p className="text-center text-2xl font-semibold">
                 {titleoriginal}
               </p>
-              <p className="border-y py-10 text-lg break-all">
+              <p className="break-all border-y py-10 text-lg">
                 {descriptionoriginal}
               </p>
               <div className="flex items-center justify-between">
@@ -668,118 +670,253 @@ const Dashboardcontent = () => {
             <p className="text-center  text-lg text-gray-400 md:text-left">
               change your last Post if you want
             </p>
-            <div className="flex flex-col py-6 gap-4">
+            <div className="flex flex-col gap-4 py-6">
               <div className="flex flex-col gap-2">
-                <label htmlFor="quote-title" className="text-lg">Title :</label>
-                <input type="text" name="" id="quote-title" className="quote-title bg-gray-400 rounded-lg py-2 focus:outline-none pl-4" placeholder="Short title better than long try from 6 words to 25" style={{backgroundColor : "#EEEEEE"}}/>
+                <label htmlFor="quote-title" className="text-lg">
+                  Title :
+                </label>
+                <input
+                  type="text"
+                  name=""
+                  id="quote-title"
+                  className="quote-title rounded-lg bg-gray-400 py-2 pl-4 focus:outline-none"
+                  placeholder="Short title better than long try from 6 words to 25"
+                  style={{ backgroundColor: "#EEEEEE" }}
+                />
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="quote-description" className="text-lg">Description :</label>
-                <textarea type="text" name="" id="quote-description" className="quote-description bg-gray-400 rounded-lg py-2 focus:outline-none pl-4 h-28 resize-none" placeholder="The description should be less than 96 letters and more than 50 letters" style={{backgroundColor : "#EEEEEE"}}/>
+                <label htmlFor="quote-description" className="text-lg">
+                  Description :
+                </label>
+                <textarea
+                  type="text"
+                  name=""
+                  id="quote-description"
+                  className="quote-description h-28 resize-none rounded-lg bg-gray-400 py-2 pl-4 focus:outline-none"
+                  placeholder="The description should be less than 96 letters and more than 50 letters"
+                  style={{ backgroundColor: "#EEEEEE" }}
+                />
               </div>
               <div className="flex justify-between">
                 <p className="warning"></p>
-                <p className="text-lg text-white  px-4 rounded 3 cursor-pointer save-post" onClick={editqoute} style={{backgroundColor: "#0D69D5"}}>Save</p>
-    
+                <p
+                  className="3 save-post  cursor-pointer rounded px-4 text-lg text-white"
+                  onClick={editqoute}
+                  style={{ backgroundColor: "#0D69D5" }}
+                >
+                  Save
+                </p>
               </div>
             </div>
           </div>
           <div className="main-card  rounded-2xl bg-white px-6 py-6">
-            <div>
-            <table className="w-full text-left h-full ">
-              <caption className="mb-2 font-bold text-lg">
-                The Status Of The Year
-              </caption>
-              <thead>
-                <th>Name</th>
-                <th>Finish Date</th>
-                <th>Client</th>
-                <th>Price</th>
-                <th>Team</th>
-                <th>Status</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Outerbah Mohamed</td>
-                  <td>01 Jan 2024</td>
-                  <td>Governement</td>
-                  <td>$150</td>
-                  <td className="flex -space-x-3 flex items-center h-full">
-                    <img src="../../public/assets/team-01.png" alt="team-1" className="w-7 rounded-full"/>
-                    <img src="../../public/assets/team-02.png" alt="team-2" className="w-7 rounded-full"/>
-                    <img src="../../public/assets/team-03.png" alt="team-3" className="w-7 rounded-full"/>
-                    <img src="../../public/assets/team-05.png" alt="team-4" className="w-7 rounded-full"/>
-                  </td>
-                  <td>Pending</td>
-                </tr>
-                <tr>
-                  <td>Outerbah Younes</td>
+            <div className="table-container h-5/6 w-full overflow-auto">
+              <table className="mx-auto h-5/6 w-full text-left">
+                <caption className="mb-2 text-lg font-bold">
+                  The Status Of The Year
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Finish Date</th>
+                    <th>Client</th>
+                    <th>Price</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Outerbah Mohamed</td>
+                    <td>01 Jan 2024</td>
+                    <td>Governement</td>
+                    <td>$150</td>
+                    <td className="flex h-full items-center -space-x-3">
+                      <img
+                        src="../../public/assets/team-01.png"
+                        alt="team-1"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-02.png"
+                        alt="team-2"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-03.png"
+                        alt="team-3"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-05.png"
+                        alt="team-4"
+                        className="w-7 rounded-full"
+                      />
+                    </td>
+                    <td>
+                      <span className="status-worker-1 rounded-lg px-3 py-1 font-bold text-white">
+                        Completed
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Outerbah Younes</td>
                     <td>01 Jan 2024</td>
                     <td>The Matrix</td>
                     <td>$150</td>
-                    <td className="flex -space-x-3 flex items-center h-full">
-                      <img src="../../public/assets/team-01.png" alt="team-1" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-02.png" alt="team-2" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-03.png" alt="team-3" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-04.png" alt="team-4" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-05.png" alt="team-5" className="w-7 rounded-full"/>
+                    <td className="flex h-full items-center -space-x-3">
+                      <img
+                        src="../../public/assets/team-01.png"
+                        alt="team-1"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-02.png"
+                        alt="team-2"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-03.png"
+                        alt="team-3"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-04.png"
+                        alt="team-4"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-05.png"
+                        alt="team-5"
+                        className="w-7 rounded-full"
+                      />
                     </td>
-                    <td>Pending</td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
+                    <td>
+                      <span className="status-worker-2 rounded-lg px-3 py-1 font-bold text-white">
+                        Completed
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
                     <td>01 Jan 2024</td>
                     <td>The Matrix</td>
                     <td>$150</td>
-                    <td className="flex -space-x-3 flex items-center h-full">
-                      <img src="../../public/assets/team-01.png" alt="team-1" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-02.png" alt="team-2" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-03.png" alt="team-3" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-04.png" alt="team-4" className="w-7 rounded-full"/>
+                    <td className="flex h-full items-center -space-x-3">
+                      <img
+                        src="../../public/assets/team-01.png"
+                        alt="team-1"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-02.png"
+                        alt="team-2"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-03.png"
+                        alt="team-3"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-04.png"
+                        alt="team-4"
+                        className="w-7 rounded-full"
+                      />
                     </td>
-                    <td>Pending</td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
+                    <td>
+                      <span className="status-worker-3 rounded-lg px-3 py-1 font-bold text-white">
+                        Completed
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
                     <td>01 Jan 2024</td>
                     <td>The Matrix</td>
                     <td>$150</td>
-                    <td className="flex -space-x-3 flex items-center h-full">
-                      <img src="../../public/assets/team-01.png" alt="team-1" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-03.png" alt="team-3" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-04.png" alt="team-4" className="w-7 rounded-full"/>
+                    <td className="flex h-full items-center -space-x-3">
+                      <img
+                        src="../../public/assets/team-01.png"
+                        alt="team-1"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-03.png"
+                        alt="team-3"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-04.png"
+                        alt="team-4"
+                        className="w-7 rounded-full"
+                      />
                     </td>
-                    <td>Pending</td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
+                    <td>
+                      <span className="status-worker-4 rounded-lg px-3 py-1 font-bold text-white">
+                        Rejected
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
                     <td>01 Jan 2024</td>
                     <td>The Matrix</td>
                     <td>$150</td>
-                    <td className="flex -space-x-3 flex items-center h-full">
-                      <img src="../../public/assets/team-01.png" alt="team-1" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-03.png" alt="team-3" className="w-7 rounded-full"/>
+                    <td className="flex h-full items-center -space-x-3">
+                      <img
+                        src="../../public/assets/team-01.png"
+                        alt="team-1"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-03.png"
+                        alt="team-3"
+                        className="w-7 rounded-full"
+                      />
                     </td>
-                    <td>Pending</td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
+                    <td>
+                      <span className="status-worker-5 rounded-lg px-3 py-1 font-bold text-white">
+                        Rejected
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
                     <td>01 Jan 2024</td>
                     <td>The Matrix</td>
                     <td>$150</td>
-                    <td className="flex -space-x-3 flex items-center h-full">
-                      <img src="../../public/assets/team-01.png" alt="team-1" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-02.png" alt="team-2" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-03.png" alt="team-3" className="w-7 rounded-full"/>
-                      <img src="../../public/assets/team-04.png" alt="team-4" className="w-7 rounded-full"/>
+                    <td className="flex h-full items-center -space-x-3">
+                      <img
+                        src="../../public/assets/team-01.png"
+                        alt="team-1"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-02.png"
+                        alt="team-2"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-03.png"
+                        alt="team-3"
+                        className="w-7 rounded-full"
+                      />
+                      <img
+                        src="../../public/assets/team-04.png"
+                        alt="team-4"
+                        className="w-7 rounded-full"
+                      />
                     </td>
-                    <td>Pending</td>
-                </tr>
-                
-              </tbody>
-            </table>
+                    <td>
+                      <span className="status-worker-6 rounded-lg px-3 py-1 font-bold text-white">
+                        Pending
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            
           </div>
         </div>
       </div>

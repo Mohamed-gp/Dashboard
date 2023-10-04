@@ -149,8 +149,40 @@
 .main-card:last-of-type{
     width: 100% !important;
     min-height: 550px !important;
-    table{
-     border-spacing: 1023px;
+}
+table{
+    thead tr{
+        background-color: #eee;
+        height: 50px;
     }
-    
+    th,td{
+        padding-left: 10px;
+    }
+    td{
+        border: 1px solid #eee;
+    }
+    .status-worker-1,.status-worker-2,.status-worker-3{
+        background-color: #22C55E;
+    }
+    .status-worker-4,.status-worker-5{
+        background-color: #F44336;
+    }
+    .status-worker-6{
+        background-color: #F59E0B;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .main-card:last-of-type{
+        display: none;
+    }
+}
+@media (max-width: 965px) {
+    table{
+        width: 150% !important;
+    }
+    .table-container{
+        width: 100%;
+    }
 }
