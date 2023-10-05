@@ -1,4 +1,4 @@
-import styles from "./_Dashboardcontent.scss";
+import "./scss/_Dashboardcontent.scss";
 import { RiVipCrownFill } from "react-icons/ri";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { BsPerson, BsCodeSlash } from "react-icons/bs";
@@ -71,7 +71,7 @@ const Dashboardcontent = () => {
         </p>
         <div className="main-cards-container mt-6 flex flex-wrap justify-between gap-y-4">
           <div className="main-card card-one relative rounded-2xl bg-white px-6 py-6">
-            <div className="one absolute left-0 top-0 h-2/5 w-full rounded-t-2xl bg-red-300 px-6 py-6">
+            <div className="one absolute left-0 top-0 h-2/5 w-full rounded-t-2xl px-6 py-6">
               <p className="text-center text-3xl font-bold md:text-left">
                 Welcome
               </p>
@@ -709,7 +709,7 @@ const Dashboardcontent = () => {
               </div>
             </div>
           </div>
-          <div className="main-card  rounded-2xl bg-white px-6 py-6">
+          <div className="main-card-table  rounded-2xl bg-white px-6 py-6">
             <div className="table-container h-5/6 w-full overflow-auto">
               <table className="mx-auto h-5/6 w-full text-left">
                 <caption className="mb-2 text-lg font-bold">
