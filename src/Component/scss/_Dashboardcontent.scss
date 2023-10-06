@@ -1,188 +1,189 @@
 
-.card-one{
+.dashboard-content{
 
-    .one{
-        background-color: #eee;
-        background-image: url(../../public/assets/welcome.png);
-        background-repeat: no-repeat;
-        background-size: 120px;
-        background-position: 95% center;
-    }
-    .profile-absolute{
-        top: calc(40% - 24px);
-    }
-    .three{
-        top: 37%;
-    }
-}
 
-.vip-hover {
-    position: relative;
-  }
-  
-  .vip-hover:hover::after {
-    content: "View Plans";
-    position: absolute;
-    top: 150%;
-    width: 150%;
-    background-color: black;
-    left: -25%;
-    text-align: center;
-    padding: 5px 0px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    font-size: 14px;
-}
-.vip-hover:hover::before{
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 90%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    border: 10px solid;
-    border-color: transparent transparent black transparent;
-}
-.statistic-card {
-    width: 100%;
-}
-@media (min-width: 768px) {
-    .statistic-card {
-        width: 47%;
-    }
-}
-.progress-list{
-    position: relative;
+    .card-one{
 
-    &::before{
+        .one{
+            background-image: url(../../public/assets/welcome.png);
+            background-repeat: no-repeat;
+            background-size: 120px;
+            background-position: 95% center;
+        }
+        .profile-absolute{
+            top: calc(40% - 24px);
+        }
+        .three{
+            top: 37%;
+        }
+    }
+
+    .vip-hover {
+        position: relative;
+    }
+    
+    .vip-hover:hover::after {
+        content: "View Plans";
         position: absolute;
-        content: '';
-        left: -33px;
-        height: 90%;
-        top: 20px;
-        background-color: #0075ff;
-        width: 4px;
+        top: 150%;
+        width: 150%;
+        background-color: black;
+        left: -25%;
+        text-align: center;
+        padding: 5px 0px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        font-size: 14px;
+    }
+    .vip-hover:hover::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 90%;
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
-}
-    li::before{
-    position: absolute;
-    content: '';
-    left: -48px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background-color: #0075ff;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    z-index: 1000;
-    border: 3px solid white;
-    outline: 3px solid #0075ff;
-}
-    & li:nth-child(7)::before{
-        animation: flash 1s both infinite linear;
-        -webkit-animation: flash 1s both infinite linear;
-} 
-    & li:last-of-type::before {
-        background-color: white;
+        border: 10px solid;
+        border-color: transparent transparent black transparent;
     }
-}
+    .statistic-card {
+        width: 100%;
+    }
+    @media (min-width: 768px) {
+        .statistic-card {
+            width: 47%;
+        }
+    }
+    .progress-list{
+        position: relative;
 
-@keyframes flash {
-    from{
-        background-color: white;
-    }
-    to{
-        background-color: #0075ff;
-    }
-}
-
-.reminder{
-    &::before{
+        &::before{
             position: absolute;
-    content: '';
-    left: -48px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background-color: #0075ff;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+            content: '';
+            left: -33px;
+            height: 90%;
+            top: 20px;
+            background-color: #0075ff;
+            width: 4px;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
     }
-    &::after{
+        li::before{
         position: absolute;
         content: '';
-        top: 0;
-        left: -9px;
-        height: 100%;
-        width: 3px;
+        left: -48px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
         background-color: #0075ff;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        z-index: 1000;
+        border: 3px solid white;
+        outline: 3px solid #0075ff;
     }
-}
+        & li:nth-child(7)::before{
+            animation: flash 1s both infinite linear;
+            -webkit-animation: flash 1s both infinite linear;
+    } 
+        & li:last-of-type::before {
+            background-color: white;
+        }
+    }
 
-// start with table
-.main-card-table{
-    width: 100% !important;
-    min-height: 550px !important;
-}
-table{
-    thead tr{
-        background-color: #eee;
-        height: 50px;
+    @keyframes flash {
+        from{
+            background-color: white;
+        }
+        to{
+            background-color: #0075ff;
+        }
     }
-    th,td{
-        padding-left: 10px;
-    }
-    td{
-        border: 1px solid #eee;
-    }
-    .status-worker-1,.status-worker-2,.status-worker-3{
-        background-color: #22C55E;
-    }
-    .status-worker-4,.status-worker-5{
-        background-color: #F44336;
-    }
-    .status-worker-6{
-        background-color: #F59E0B;
-    }
-}
 
-
-@media (max-width: 640px) {
-    .main-card:last-of-type{
-        display: none;
+    .reminder{
+        &::before{
+                position: absolute;
+        content: '';
+        left: -48px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -9px;
+            height: 100%;
+            width: 3px;
+        }
     }
-}
-@media (max-width: 965px) {
+
+    // start with table
+    .main-card-table{
+        width: 100% !important;
+        min-height: 550px !important;
+    }
     table{
-        width: 150% !important;
+        thead tr{
+            height: 50px;
+            border-width: 1px;
+        }
+        th,td{
+            padding-left: 10px;
+        }
+        td{
+            border: 1px solid #eee;
+        }
+        .status-worker-1,.status-worker-2,.status-worker-3{
+            background-color: #22C55E;
+        }
+        .status-worker-4,.status-worker-5{
+            background-color: #F44336;
+        }
+        .status-worker-6{
+            background-color: #F59E0B;
+        }
     }
-    .table-container{
-        width: 100%;
+
+
+    @media (max-width: 640px) {
+        .main-card-table:last-of-type{
+            display: none;
+        }
+    }
+    @media (max-width: 965px) {
+        table{
+            width: 150% !important;
+        }
+        .table-container{
+            width: 100%;
+        }
     }
 }

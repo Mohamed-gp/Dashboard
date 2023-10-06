@@ -2,15 +2,21 @@ import { useState } from "react";
 import { IoSettings } from "react-icons/io5";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [light, setlight] = useState(true);
   const changetheme = () => {
     setlight(!light);
+    if (document.querySelector("html").classList.contains("dark")) {
+      document.querySelector("html").classList.remove("dark")
+    }else{
+      document.querySelector("html").classList.add("dark")
+    }
   };
   return (
     <>
-      <header className="flex items-center justify-between px-6 py-3">
+      <header className="flex items-center justify-between px-6 py-3 dark:bg-md dark:text-white">
         <div className="profile flex items-center gap-4 font-bold">
           <div className="img ">
             <img src="../../public/assets/avatar.png" alt="" className="w-12" />
@@ -27,9 +33,9 @@ const Header = () => {
           >
             {light ? <MdLightMode /> : <MdDarkMode />}
           </div>
-          <div className="setting-rotate hover:rotate-180 ">
+          <Link to="/settings" className="setting-rotate hover:rotate-180 ">
             <IoSettings className="cursor-pointer text-2xl" />
-          </div>
+          </Link>
         </div>
       </header>
     </>

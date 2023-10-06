@@ -8,7 +8,7 @@ const Dashboard = () => {
         <Nav activenav="dashboard"/>
         <div className="right-side flex-1">
           <Header/>
-          <Dashboardcontent/>
+          <Dashboardcontent />
         </div>
       </div>
     </>

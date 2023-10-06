@@ -15,10 +15,10 @@ const nav = ({activenav}) => {
   
   return (
     <>
-      <nav>
+      <nav className="dark:bg-md dark:text-white">
         <Link
           to="/"
-          className="logo static mx-auto mb-6 mt-5 block w-fit font-bold text-xs md:relative md:mb-12 md:text-xl"
+          className="logo before:dark:bg-white after:dark:bg-white after:dark:outline-md static mx-auto mb-6 mt-5 block w-fit font-bold text-xs md:relative md:mb-12 md:text-xl"
         >
           Mohamed
         </Link>
