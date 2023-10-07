@@ -26,10 +26,13 @@ export default {
         'md': '#121229',
         'sd': '#191732',
         'td': '#211f3e',
+        'tbg': '#323052',
+        'mb': '#0075ff',
         'sb': '#0077B5',
         'sw': '#eee',
+        'tw': '#ddd',
       },
     },
   },
-  plugins: []
+  plugins: [require('tailwind-scrollbar'),]
 }

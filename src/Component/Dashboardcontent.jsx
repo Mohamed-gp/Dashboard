@@ -676,9 +676,8 @@ const Dashboardcontent = () => {
                       type="text"
                       name=""
                       id="quote-title"
-                      className="quote-title rounded-lg bg-gray-400 py-2 pl-4 focus:outline-none"
+                      className="quote-title dark:text-md rounded-lg bg-sw py-2 pl-4 focus:outline-none"
                       placeholder="Short title better than long try from 6 words to 25"
-                      style={{ backgroundColor: "#EEEEEE" }}
                     />
                   </div>
                   <div className="flex flex-col gap-2">
@@ -689,9 +688,8 @@ const Dashboardcontent = () => {
                       type="text"
                       name=""
                       id="quote-description"
-                      className="quote-description h-28 resize-none rounded-lg bg-gray-400 py-2 pl-4 focus:outline-none"
+                      className="quote-description dark:text-md h-28 resize-none rounded-lg bg-sw py-2 pl-4 focus:outline-none"
                       placeholder="The description should be less than 96 letters and more than 50 letters"
-                      style={{ backgroundColor: "#EEEEEE" }}
                     />
                   </div>
                   <div className="flex justify-between">

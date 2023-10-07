@@ -7,11 +7,24 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 
-const nav = ({activenav}) => {
-    useEffect(() => {
-      document.querySelector(`.${activenav}`).classList.add("active-page")
-    },[])
-
+const nav = ({activeweb}) => {
+  
+  useEffect(() => {
+    const navlinks = document.querySelectorAll(".nav-link")
+    navlinks.forEach((el) => {
+      el.addEventListener("click",() => {
+        navlinks.forEach((el) => {
+          el.classList.remove("active-page")
+        })
+        el.classList.add("active-page")
+      })
+    })
+    if (activeweb == "") {
+      document.querySelector(".dashboard").classList.add("active-page")
+    }else{
+      document.querySelector(`.${activeweb}`).classList.add("active-page")
+    }
+  },[])
   
   return (
     <>
@@ -26,7 +39,7 @@ const nav = ({activenav}) => {
           <li>
             <Link
               to="/"
-              className="dashboard page mx-5 mb-2 flex items-center gap-2 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
+              className="dashboard nav-link page mx-5 mb-2 flex items-center gap-2 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
             >
               <FaChartBar />
               <p className="hidden md:block">Dashboard</p>
@@ -35,7 +48,7 @@ const nav = ({activenav}) => {
           <li>
             <Link
               to="/settings"
-              className="settings page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
+              className="settings nav-link page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
             >
               <IoSettings />
               <p className="hidden md:block">Settings</p>
@@ -44,7 +57,7 @@ const nav = ({activenav}) => {
           <li>
             <Link
               to="/profile"
-              className="profile page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
+              className="profile nav-link page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
             >
               <BsPerson />
               <p className="hidden md:block">Profile</p>
@@ -53,7 +66,7 @@ const nav = ({activenav}) => {
           <li>
             <Link
               to="/projects"
-              className="projects page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
+              className="projects nav-link page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
             >
               <BsFillDiagram3Fill />
               <p className="hidden md:block">Projects</p>
@@ -62,7 +75,7 @@ const nav = ({activenav}) => {
           <li>
             <Link
               to="/courses"
-              className="courses page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
+              className="courses nav-link page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
             >
               <FaGraduationCap />
               <p className="hidden md:block">Courses</p>
@@ -71,7 +84,7 @@ const nav = ({activenav}) => {
           <li>
             <Link
               to="/friends"
-              className="friends page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
+              className="friends page nav-link mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
             >
               <GiThreeFriends />
               <p className="hidden md:block">Friends</p>
@@ -80,7 +93,7 @@ const nav = ({activenav}) => {
           <li>
             <Link
               to="/files"
-              className="files page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
+              className="files page nav-link mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
             >
               <AiOutlineFile />
               <p className="hidden md:block">Files</p>
@@ -89,7 +102,7 @@ const nav = ({activenav}) => {
           <li>
             <Link
               to="/plans"
-              className="plans page mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
+              className="plans page nav-link mx-5 mb-2 flex items-center gap-3 rounded-lg py-2 px-2 md:pl-5 md:pr-10"
             >
               <AiOutlineCreditCard />
               <p className="hidden md:block">Plans</p>
