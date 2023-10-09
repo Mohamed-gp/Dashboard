@@ -293,7 +293,10 @@ const Coursescontent = () => {
                             
                             <p className="font-bold dark:text-white">Mastering Python</p>
                             <p className="text-gray-500">Mastering Python To Prepare For Data Science And AI And Automating Things in Your Life</p>
-
+                            <div className="relative">
+                                <p className="bg-red-500 w-fit mx-auto px-4 py-1 rounded-lg text-white tracking-widest relative font-bold z-10">OFFER</p>
+                                <p className="absolute rounded-lg course-badge left-0 top-1/2 -translate-y-1/2 bg-red-400 h-1.5  w-full"></p>
+                            </div>
                             <div className="flex justify-between text-gray-500 font-bold relative">
                                 <div className="flex gap-1 items-center">
                                     <BsFillPersonFill/>
@@ -324,6 +327,10 @@ const Coursescontent = () => {
                             
                             <p className="font-bold dark:text-white">PHP Examples</p>
                             <p className="text-gray-500">PHP Tutorials And Examples And Practice On Web Application And Connecting With Databases</p>
+                            <div className="relative">
+                                <p className="bg-red-500 w-fit mx-auto px-4 py-1 rounded-lg text-white tracking-widest relative font-bold z-10">OFFER</p>
+                                <p className="absolute rounded-lg course-badge left-0 top-1/2 -translate-y-1/2 bg-red-400 h-1.5  w-full"></p>
+                            </div>
                             <div className="flex justify-between text-gray-500 font-bold relative">
                                 <div className="flex gap-1 items-center">
                                     <BsFillPersonFill/>

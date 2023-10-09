@@ -1,32 +1,4 @@
-.settings-content{
-    .toggle-animation{
-        animation: toggle-rl .3s linear forwards;
-        -webkit-animation: toggle-rl .3s linear forwards;
-    }
-    .rv-toggle-animation{
-        animation: toggle-lr .3s linear forwards ;
-        -webkit-animation: toggle-lr .3s linear forwards ;
-}
-}
 
 
 
 
-@keyframes toggle-rl {
-    0%{
-        right: 4px;
-    }
-    100%{
-        right: 52px;
-    }
-   
-}
-@keyframes toggle-lr {
-    0%{
-        right: 52px;
-    }
-    100%{
-        right: 4px;
-    }
-   
-}

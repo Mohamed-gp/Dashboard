@@ -138,15 +138,77 @@ nav{
 
 
     .main-card{
-        width: 100%;
-        min-height: 450px;
+        width: 100%;min-height: 450px;
+        
         @media (min-width: 1100px) {
             width: 49%;
         }
         @media (min-width: 1536px) {
             width: 33%;
         }
+        @media (min-width: 2000px) {
+            width: 19%;
+            
+        }
     }
 }
 
 
+
+// animation  for setting
+.toggle-animation-s{
+    animation: toggle-rl .3s linear forwards;
+    -webkit-animation: toggle-rl .3s linear forwards;
+}
+.rv-toggle-animation-s{
+    animation: toggle-lr .3s linear forwards ;
+    -webkit-animation: toggle-lr .3s linear forwards ;
+}
+@keyframes toggle-rl {
+0%{
+    right: 4px;
+}
+100%{
+    right: 52px;
+}
+
+}
+@keyframes toggle-lr {
+0%{
+    right: 52px;
+}
+100%{
+    right: 4px;
+}
+
+}
+
+
+// animation for profile 
+
+.toggle-animation-p{
+    animation: toggle-rl-p .3s linear forwards;
+    -webkit-animation: toggle-rl-p .3s linear forwards;
+}
+.rv-toggle-animation-p{
+    animation: toggle-lr-p .3s linear forwards ;
+    -webkit-animation: toggle-lr-p .3s linear forwards ;
+}
+@keyframes toggle-rl-p {
+    0%{
+        right: 4px;
+    }
+    100%{
+        right: 60px;
+    }
+   
+}
+@keyframes toggle-lr-p {
+    0%{
+        right: 60px;
+    }
+    100%{
+        right: 4px;
+    }
+   
+}

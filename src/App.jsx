@@ -48,6 +48,10 @@ import Dashboardcontent from "./Component/Dashboardcontent";
 import Coursescontent from "./Component/Coursescontent";
 import Settingscontent from "./Component/Settingscontent";
 import Profilecontent from "./Component/Profilecontent";
+import Projectscontent from "./Component/Projectscontent";
+import Friendscontent from "./Component/Friendscontent"
+import Filescontent from "./Component/Filescontent"
+import Planscontent from "./Component/Planscontent";
 const App = () => {
   const [loading,setloading] = useState(true)
   useEffect(() => {
@@ -69,7 +73,10 @@ const App = () => {
                                   <Route path="/courses" element={<Coursescontent/>}/>
                                   <Route path="/settings" element={<Settingscontent/>}/>
                                   <Route path="/profile" element={<Profilecontent/>}/>
-
+                                  <Route path="/projects" element={<Projectscontent/>}/>
+                                  <Route path="/friends" element={<Friendscontent/>}/>
+                                  <Route path="/files" element={<Filescontent/>}/>
+                                  <Route path="/plans" element={<Planscontent/>}/>
                               </Routes>
                           </div>
                   </div>

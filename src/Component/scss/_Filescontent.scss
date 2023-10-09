@@ -1,0 +1,33 @@
+.files-content{
+    .files-card{
+        min-height: 220px !important;
+        width: 17%;
+        img:hover{
+            transition-duration: .5s;
+            transform: rotate(5deg);
+            -webkit-transform: rotate(5deg);
+            -moz-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+            -o-transform: rotate(5deg);
+        }
+    }
+    @media (max-width: 1000px) {
+        .files-card{
+            width: 30%;
+        }
+        
+    }
+    @media (max-width: 868px) {
+        .files-card{
+            width: 48%;
+        }
+        
+    }
+    @media (max-width: 768px) {
+        .files-card{
+            width: 100%;
+        }
+        
+    }
+
+}

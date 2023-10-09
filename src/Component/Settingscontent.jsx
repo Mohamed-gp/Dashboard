@@ -12,34 +12,18 @@ import { useEffect } from "react";
 
 // toggle
 const Settingscontent = () => {
-  document.querySelectorAll(".toggle-relative").forEach((e) => {
-    e.addEventListener("click", () => {
-      if (e.children[0].children[1].classList.contains("hidden")) {
-        e.classList.add("bg-gray-500");
-        e.children[0].children[0].classList.add("hidden");
-        e.children[0].classList.add("toggle-animation");
-        e.children[0].classList.remove("rv-toggle-animation");
-        e.classList.remove("bg-mb");
-        e.children[0].children[1].classList.remove("hidden");
-      } else {
-        e.classList.add("bg-mb");
-        e.children[0].children[0].classList.remove("hidden");
-        e.children[0].classList.add("rv-toggle-animation");
-        e.children[0].classList.remove("toggle-animation");
-        e.classList.remove("bg-gray-500");
-        e.children[0].children[1].classList.add("hidden");
-      }
-    });
-  });
+  
 //remove disabled inputs edit
+//syling mini plans
 const abled = () => {
     const inputs = document.querySelectorAll(".disabled");
     inputs.forEach((e) => {
         e.attributes.removeNamedItem("disabled");
+        e.classList.remove("custom-cursor-default-hover")
+        e.classList.add("cursor-pointer")
     });
 };
-//syling mini plans
-  useEffect(() => {
+useEffect(() => {
     const miniPlans = document.querySelectorAll(".mini-plan");
     miniPlans.forEach((e) => {
       e.addEventListener("click", () => {
@@ -47,6 +31,25 @@ const abled = () => {
           e.classList.remove("border-mb");
         });
         e.classList.add("border-mb");
+      });
+    });
+    document.querySelectorAll(".toggle-relative").forEach((e) => {
+      e.addEventListener("click", () => {
+        if (e.children[0].children[1].classList.contains("hidden")) {
+          e.classList.add("bg-gray-500");
+          e.children[0].children[0].classList.add("hidden");
+          e.children[0].classList.add("toggle-animation-s");
+          e.children[0].classList.remove("rv-toggle-animation-s");
+          e.classList.remove("bg-mb");
+          e.children[0].children[1].classList.remove("hidden");
+        } else {
+          e.classList.add("bg-mb");
+          e.children[0].children[0].classList.remove("hidden");
+          e.children[0].classList.add("rv-toggle-animation-s");
+          e.children[0].classList.remove("toggle-animation-s");
+          e.classList.remove("bg-gray-500");
+          e.children[0].children[1].classList.add("hidden");
+        }
       });
     });
   }, []);
