@@ -10,19 +10,18 @@ import {
 } from "react-icons/fa";
 import { useEffect } from "react";
 
-// toggle
 const Settingscontent = () => {
   
 //remove disabled inputs edit
-//syling mini plans
 const abled = () => {
-    const inputs = document.querySelectorAll(".disabled");
-    inputs.forEach((e) => {
-        e.attributes.removeNamedItem("disabled");
-        e.classList.remove("custom-cursor-default-hover")
-        e.classList.add("cursor-pointer")
-    });
+  const inputs = document.querySelectorAll(".disabled");
+  inputs.forEach((e) => {
+    e.attributes.removeNamedItem("disabled");
+    e.classList.remove("custom-cursor-default-hover")
+    e.classList.add("cursor-pointer")
+  });
 };
+//syling mini plans
 useEffect(() => {
     const miniPlans = document.querySelectorAll(".mini-plan");
     miniPlans.forEach((e) => {
@@ -33,27 +32,27 @@ useEffect(() => {
         e.classList.add("border-mb");
       });
     });
-    document.querySelectorAll(".toggle-relative").forEach((e) => {
-      e.addEventListener("click", () => {
-        if (e.children[0].children[1].classList.contains("hidden")) {
-          e.classList.add("bg-gray-500");
-          e.children[0].children[0].classList.add("hidden");
-          e.children[0].classList.add("toggle-animation-s");
-          e.children[0].classList.remove("rv-toggle-animation-s");
-          e.classList.remove("bg-mb");
-          e.children[0].children[1].classList.remove("hidden");
-        } else {
-          e.classList.add("bg-mb");
-          e.children[0].children[0].classList.remove("hidden");
-          e.children[0].classList.add("rv-toggle-animation-s");
-          e.children[0].classList.remove("toggle-animation-s");
-          e.classList.remove("bg-gray-500");
-          e.children[0].children[1].classList.add("hidden");
-        }
-      });
-    });
   }, []);
+  // for toggle
 
+  const toggle = (e) => {
+        if (e.currentTarget.children[0].children[1].classList.contains("hidden")) {
+          e.currentTarget.classList.add("bg-gray-500");
+          e.currentTarget.children[0].children[0].classList.add("hidden");
+          e.currentTarget.children[0].classList.add("toggle-animation-s");
+          e.currentTarget.children[0].classList.remove("rv-toggle-animation-s");
+          e.currentTarget.classList.remove("bg-mb");
+          e.currentTarget.children[0].children[1].classList.remove("hidden");
+        } else {
+          e.currentTarget.classList.add("bg-mb");
+          e.currentTarget.children[0].children[0].classList.remove("hidden");
+          e.currentTarget.children[0].classList.add("rv-toggle-animation-s");
+          e.currentTarget.children[0].classList.remove("toggle-animation-s");
+          e.currentTarget.classList.remove("bg-gray-500");
+          e.currentTarget.children[0].children[1].classList.add("hidden");
+        }
+
+  }
   return (
     <div className="settings-content">
       <div className="content px-4 py-5 dark:bg-sd">
@@ -69,13 +68,13 @@ useEffect(() => {
               Control The Website If There Is Maintenance
             </p>
             <div className="flex items-center justify-between py-4 text-left">
-              <div>
+              <div className="w-2/3 sm:w-auto">
                 <p className="font-bold dark:text-white">Website Control</p>
                 <p className="text-gray-400">
                   Open/Close Website And Type The Reason
                 </p>
               </div>
-              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000">
+              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000" onClick={toggle}>
                 <div className="toggle-absolute absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                   <FaCheck className="text-mb check text-base" />
                   <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -83,13 +82,13 @@ useEffect(() => {
               </div>
             </div>
             <div className="flex items-center justify-between py-4 text-left">
-              <div>
+              <div className="w-2/3 sm:w-auto">
                 <p className="font-bold dark:text-white">Website Control</p>
                 <p className="text-gray-400">
                   Open/Close Website And Type The Reason
                 </p>
               </div>
-              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000">
+              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000" onClick={toggle}>
                 <div className="toggle-absolute absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                   <FaCheck className="text-mb check text-base" />
                   <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -97,13 +96,13 @@ useEffect(() => {
               </div>
             </div>
             <div className="flex items-center justify-between py-4 text-left">
-              <div>
+              <div className="w-2/3 sm:w-auto">
                 <p className="font-bold dark:text-white">Website Control</p>
                 <p className="text-gray-400">
                   Open/Close Website And Type The Reason
                 </p>
               </div>
-              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000">
+              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000" onClick={toggle}>
                 <div className="toggle-absolute absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                   <FaCheck className="text-mb check text-base" />
                   <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -111,13 +110,13 @@ useEffect(() => {
               </div>
             </div>
             <div className="flex items-center justify-between py-4 text-left">
-              <div>
+              <div className="w-2/3 sm:w-auto">
                 <p className="font-bold dark:text-white">Website Control</p>
                 <p className="text-gray-400">
                   Open/Close Website And Type The Reason
                 </p>
               </div>
-              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000">
+              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000" onClick={toggle}>
                 <div className="toggle-absolute absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                   <FaCheck className="text-mb check text-base" />
                   <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -189,13 +188,13 @@ useEffect(() => {
             </div>
 
             <div className="flex items-center justify-between border-b py-4 text-left">
-              <div>
+              <div className="w-2/3 sm:w-auto">
                 <p className="font-bold dark:text-white">
                   Two-Factor Authentication
                 </p>
                 <p className="text-gray-400">Enable/Disable The Feature</p>
               </div>
-              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000">
+              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000" onClick={toggle}>
                 <div className="toggle-absolute absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                   <FaCheck className="text-mb check text-base" />
                   <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -203,11 +202,11 @@ useEffect(() => {
               </div>
             </div>
             <div className="flex items-center justify-between border-b py-4 text-left">
-              <div>
+              <div className="w-2/3 sm:w-auto">
                 <p className="font-bold dark:text-white">Email Defender</p>
                 <p className="text-gray-400">Enable/Disable The Feature</p>
               </div>
-              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000">
+              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000" onClick={toggle}>
                 <div className="toggle-absolute absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                   <FaCheck className="text-mb check text-base" />
                   <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -215,13 +214,13 @@ useEffect(() => {
               </div>
             </div>
             <div className="flex items-center justify-between py-4 text-left">
-              <div>
+              <div className="w-2/3 sm:w-auto">
                 <p className="font-bold dark:text-white">Website Control</p>
                 <p className="text-gray-400">
                   Open/Close Website And Type The Reason
                 </p>
               </div>
-              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000">
+              <div className="toggle-relative bg-mb relative h-8 w-20 cursor-pointer rounded-3xl duration-1000" onClick={toggle}>
                 <div className="toggle-absolute absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                   <FaCheck className="text-mb check text-base" />
                   <FaXmark className="x-mark hidden text-base text-gray-400" />

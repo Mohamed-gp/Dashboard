@@ -16,22 +16,17 @@ import {
   FaShare,
 } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Dashboardcontent = () => {
-  useEffect(() => {
-    const todos = document.querySelectorAll(".to-do");
-    todos.forEach((el) => {
-      el.addEventListener("click", () => {
-        if (el.classList.contains("opacity-50", "line-through")) {
-          el.classList.remove("opacity-50", "line-through");
-          el.classList.add("opacity-100", "no-underline");
-        } else {
-          el.classList.add("opacity-50", "line-through");
-          el.classList.remove("opacity-100", "no-underline");
-        }
-      });
-    });
-  });
+  const checktodos = (e) => {
+    if (e.currentTarget.classList.contains("opacity-50", "line-through")) {
+      e.currentTarget.classList.remove("opacity-50", "line-through");
+    } else {
+      e.currentTarget.classList.add("opacity-50", "line-through");
+    }
+  }
+
 
   const [titleoriginal, settitleoriginal] = useState(
     "Limitations of Deception",
@@ -50,6 +45,7 @@ const Dashboardcontent = () => {
     } else {
       quoteTitle.value = null;
       quoteTitle.placeholder = "the title must be from 6 letters to 25";
+      serbas.classList.remove("hidden");
     }
     if (
       quoteDescription.value.length >= 51 &&
@@ -81,7 +77,7 @@ const Dashboardcontent = () => {
                   </p>
                 </div>
                 <div className="profile-absolute two absolute left-1/2 w-12 -translate-x-1/2 rounded-full outline outline-4 outline-white md:left-8 md:translate-x-0 ">
-                  <img src="../../public/assets/avatar.png" alt="" />
+                  <img src="/assets/avatar.png" alt="" />
                 </div>
                 <div className="three top-2/5 absolute left-0 flex h-3/5 w-full items-center rounded-b-2xl   text-center text-sm ">
                   <div className="flex  h-3/5 w-full flex-col items-center justify-evenly border-y-2  py-3 md:flex-row">
@@ -100,13 +96,13 @@ const Dashboardcontent = () => {
                   </div>
                 </div>
                 <div className="four absolute bottom-6 left-6 flex justify-between">
-                  <a
-                    href="/Plans"
+                  <Link
+                    to="/Plans"
                     className="vip-hover  flex h-8 w-16 cursor-pointer items-center justify-center gap-2 rounded-lg bg-black text-white text-yellow-400"
                   >
                     <RiVipCrownFill />
                     <p>Pro</p>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="main-card dark:bg-md  card-two rounded-2xl bg-white px-6 py-6">
@@ -204,7 +200,7 @@ const Dashboardcontent = () => {
                   <div className="card flex flex-col items-center justify-between gap-4  py-4 md:flex-row">
                     <div className="w-28">
                       <img
-                        src="../../public/assets/news-01.png"
+                        src="/assets/news-01.png"
                         alt=""
                         className="rounded-lg"
                       />
@@ -222,7 +218,7 @@ const Dashboardcontent = () => {
                   <div className="card flex flex-col items-center justify-between gap-4 py-4 md:flex-row">
                     <div className="w-28">
                       <img
-                        src="../../public/assets/news-02.png"
+                        src="/assets/news-02.png"
                         alt=""
                         className="rounded-lg"
                       />
@@ -240,7 +236,7 @@ const Dashboardcontent = () => {
                   <div className="card flex flex-col items-center justify-between gap-4  py-4 md:flex-row">
                     <div className="w-28">
                       <img
-                        src="../../public/assets/news-03.png"
+                        src="/assets/news-03.png"
                         alt=""
                         className="rounded-lg"
                       />
@@ -258,7 +254,7 @@ const Dashboardcontent = () => {
                   <div className="card flex flex-col items-center justify-between gap-4  py-4 md:flex-row">
                     <div className="w-28">
                       <img
-                        src="../../public/assets/news-04.png"
+                        src="/assets/news-04.png"
                         alt=""
                         className="rounded-lg"
                       />
@@ -280,7 +276,7 @@ const Dashboardcontent = () => {
                   Latest Tasks
                 </p>
                 <div className="flex flex-col gap-y-4 py-4">
-                  <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 no-underline">
+                  <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4" onClick={checktodos}>
                     <div>
                       <p className="text-lg font-bold">Finish One Framwork</p>
                       <p className="text-base text-gray-400">Learn React</p>
@@ -289,7 +285,7 @@ const Dashboardcontent = () => {
                       <BiCheckDouble className="text-3xl text-green-500 " />
                     </div>
                   </div>
-                  <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 no-underline">
+                  <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 " onClick={checktodos}>
                     <div>
                       <p className="text-lg font-bold">Finish The Record</p>
                       <p className="text-base text-gray-400">
@@ -300,7 +296,7 @@ const Dashboardcontent = () => {
                       <BiCheckDouble className="text-3xl text-green-500 " />
                     </div>
                   </div>
-                  <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 no-underline">
+                  <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 " onClick={checktodos}>
                     <div>
                       <p className="text-lg font-bold">Finish Projects</p>
                       <p className="text-base text-gray-400">Finish Portfolio</p>
@@ -309,7 +305,7 @@ const Dashboardcontent = () => {
                       <BiCheckDouble className="text-3xl text-green-500" />
                     </div>
                   </div>
-                  <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 line-through opacity-50">
+                  <div className="to-do flex cursor-pointer items-center justify-between border-b pb-4 line-through opacity-50" onClick={checktodos}>
                     <div>
                       <p className="text-lg font-bold">Learn MERN</p>
                       <p className="text-base text-gray-400">
@@ -320,7 +316,7 @@ const Dashboardcontent = () => {
                       <BiCheckDouble className="text-3xl text-green-500 " />
                     </div>
                   </div>
-                  <div className="to-do flex cursor-pointer items-center justify-between pb-4 no-underline">
+                  <div className="to-do flex cursor-pointer items-center justify-between pb-4" onClick={checktodos}>
                     <div>
                       <p className="text-lg font-bold">Do Stream</p>
                       <p className="text-base text-gray-400">
@@ -388,7 +384,7 @@ const Dashboardcontent = () => {
                   <div className="card flex items-center justify-between gap-4  border-b py-4">
                     <div className="w-10">
                       <img
-                        src="../../public/assets/pdf.svg"
+                        src="/assets/pdf.svg"
                         alt=""
                         className="rounded-lg"
                       />
@@ -404,7 +400,7 @@ const Dashboardcontent = () => {
                   <div className="card flex  items-center justify-between gap-4 border-b py-4">
                     <div className="w-10">
                       <img
-                        src="../../public/assets/avi.svg"
+                        src="/assets/avi.svg"
                         alt=""
                         className="rounded-lg"
                       />
@@ -420,7 +416,7 @@ const Dashboardcontent = () => {
                   <div className="card flex items-center justify-between gap-4  border-b py-4">
                     <div className="w-10">
                       <img
-                        src="../../public/assets/psd.svg"
+                        src="/assets/psd.svg"
                         alt=""
                         className="rounded-lg"
                       />
@@ -436,7 +432,7 @@ const Dashboardcontent = () => {
                   <div className="card flex  items-center justify-between gap-4  border-b py-4">
                     <div className="w-10">
                       <img
-                        src="../../public/assets/zip.svg"
+                        src="/assets/zip.svg"
                         alt=""
                         className="rounded-lg"
                       />
@@ -452,7 +448,7 @@ const Dashboardcontent = () => {
                   <div className="card flex items-center justify-between gap-4  border-b py-4">
                     <div className="w-10">
                       <img
-                        src="../../public/assets/dll.svg"
+                        src="/assets/dll.svg"
                         alt=""
                         className="rounded-lg"
                       />
@@ -468,7 +464,7 @@ const Dashboardcontent = () => {
                   <div className="card flex items-center justify-between gap-4  py-4 ">
                     <div className="w-10">
                       <img
-                        src="../../public/assets/eps.svg"
+                        src="/assets/eps.svg"
                         alt=""
                         className="rounded-lg"
                       />
@@ -498,7 +494,7 @@ const Dashboardcontent = () => {
                   <li className="relative">Get Money</li>
                 </ul>
                 <div className="img absolute bottom-10 right-10 w-44 opacity-50">
-                  <img src="../../public/assets/project.png" alt="project" />
+                  <img src="/assets/project.png" alt="project" />
                 </div>
               </div>
               <div className="main-card dark:bg-md  relative rounded-2xl bg-white px-6 py-6">
@@ -537,7 +533,7 @@ const Dashboardcontent = () => {
                       <FaLinkedinIn className="text-4xl" />
                     </div>
                     <p
-                      className="followers text-sb dark:text-white ml-4 flex-1 text-left text-lg"
+                      className="followers text-sb dark:text-white ml-4 flex-1 text-left text-xs sm:text-lg"
                     >
                       2M Connects
                     </p>
@@ -560,7 +556,7 @@ const Dashboardcontent = () => {
                       <FaFacebookF className="text-4xl" />
                     </div>
                     <p
-                      className="followers ml-4 text-sb dark:text-white flex-1 text-left text-lg"
+                      className="followers ml-4 text-sb dark:text-white flex-1 text-left text-xs sm:text-lg"
                     >
                       5000 Friends
                     </p>
@@ -583,7 +579,7 @@ const Dashboardcontent = () => {
                       <FaLinkedinIn className="text-4xl" />
                     </div>
                     <p
-                      className="followers ml-4 text-sb flex-1 text-left dark:text-white text-lg"
+                      className="followers ml-4 text-sb flex-1 text-left dark:text-white text-xs sm:text-lg"
                     >
                       2M Connects
                     </p>
@@ -606,7 +602,7 @@ const Dashboardcontent = () => {
                       <FaFacebookF className="text-4xl" />
                     </div>
                     <p
-                      className="followers ml-4 flex-1 text-sb dark:text-white text-left text-lg"
+                      className="followers ml-4 flex-1 text-sb dark:text-white text-left text-xs sm:text-lg"
                     >
                       5000 Friends
                     </p>
@@ -630,7 +626,7 @@ const Dashboardcontent = () => {
                 <div className="flex flex-col gap-6 py-6 ">
                   <div className="flex items-center gap-4">
                     <div className="img w-12">
-                      <img src="../../public/assets/avatar.png" alt="profile" />
+                      <img src="/assets/avatar.png" alt="profile" />
                     </div>
                     <div className="flex-1">
                       <p className="text-lg font-bold ">Outerbah Mohamed</p>
@@ -676,7 +672,7 @@ const Dashboardcontent = () => {
                       type="text"
                       name=""
                       id="quote-title"
-                      className="quote-title dark:text-md rounded-lg bg-sw py-2 pl-4 focus:outline-none"
+                      className="quote-title dark:text-md rounded-lg bg-sw py-2 pl-4 text-xs sm:text-lg focus:outline-none"
                       placeholder="Short title better than long try from 6 words to 25"
                     />
                   </div>
@@ -688,7 +684,7 @@ const Dashboardcontent = () => {
                       type="text"
                       name=""
                       id="quote-description"
-                      className="quote-description dark:text-md h-28 resize-none rounded-lg bg-sw py-2 pl-4 focus:outline-none"
+                      className="quote-description dark:text-md h-28 resize-none text-xs sm:text-lg rounded-lg bg-sw py-2 pl-4 focus:outline-none"
                       placeholder="The description should be less than 96 letters and more than 50 letters"
                     />
                   </div>
@@ -728,22 +724,22 @@ const Dashboardcontent = () => {
                         <td>$150</td>
                         <td className="flex h-full items-center -space-x-3">
                           <img
-                            src="../../public/assets/team-01.png"
+                            src="/assets/team-01.png"
                             alt="team-1"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-02.png"
+                            src="/assets/team-02.png"
                             alt="team-2"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-03.png"
+                            src="/assets/team-03.png"
                             alt="team-3"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-05.png"
+                            src="/assets/team-05.png"
                             alt="team-4"
                             className="w-7 rounded-full"
                           />
@@ -761,27 +757,27 @@ const Dashboardcontent = () => {
                         <td>$150</td>
                         <td className="flex h-full items-center -space-x-3">
                           <img
-                            src="../../public/assets/team-01.png"
+                            src="/assets/team-01.png"
                             alt="team-1"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-02.png"
+                            src="/assets/team-02.png"
                             alt="team-2"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-03.png"
+                            src="/assets/team-03.png"
                             alt="team-3"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-04.png"
+                            src="/assets/team-04.png"
                             alt="team-4"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-05.png"
+                            src="/assets/team-05.png"
                             alt="team-5"
                             className="w-7 rounded-full"
                           />
@@ -799,22 +795,22 @@ const Dashboardcontent = () => {
                         <td>$150</td>
                         <td className="flex h-full items-center -space-x-3">
                           <img
-                            src="../../public/assets/team-01.png"
+                            src="/assets/team-01.png"
                             alt="team-1"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-02.png"
+                            src="/assets/team-02.png"
                             alt="team-2"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-03.png"
+                            src="/assets/team-03.png"
                             alt="team-3"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-04.png"
+                            src="/assets/team-04.png"
                             alt="team-4"
                             className="w-7 rounded-full"
                           />
@@ -832,17 +828,17 @@ const Dashboardcontent = () => {
                         <td>$150</td>
                         <td className="flex h-full items-center -space-x-3">
                           <img
-                            src="../../public/assets/team-01.png"
+                            src="/assets/team-01.png"
                             alt="team-1"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-03.png"
+                            src="/assets/team-03.png"
                             alt="team-3"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-04.png"
+                            src="/assets/team-04.png"
                             alt="team-4"
                             className="w-7 rounded-full"
                           />
@@ -860,12 +856,12 @@ const Dashboardcontent = () => {
                         <td>$150</td>
                         <td className="flex h-full items-center -space-x-3">
                           <img
-                            src="../../public/assets/team-01.png"
+                            src="/assets/team-01.png"
                             alt="team-1"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-03.png"
+                            src="/assets/team-03.png"
                             alt="team-3"
                             className="w-7 rounded-full"
                           />
@@ -883,22 +879,22 @@ const Dashboardcontent = () => {
                         <td>$150</td>
                         <td className="flex h-full items-center -space-x-3">
                           <img
-                            src="../../public/assets/team-01.png"
+                            src="/assets/team-01.png"
                             alt="team-1"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-02.png"
+                            src="/assets/team-02.png"
                             alt="team-2"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-03.png"
+                            src="/assets/team-03.png"
                             alt="team-3"
                             className="w-7 rounded-full"
                           />
                           <img
-                            src="../../public/assets/team-04.png"
+                            src="/assets/team-04.png"
                             alt="team-4"
                             className="w-7 rounded-full"
                           />

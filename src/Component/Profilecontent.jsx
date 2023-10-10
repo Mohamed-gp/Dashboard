@@ -6,27 +6,24 @@ import { FaXmark } from "react-icons/fa6";
 
 const Profilecontent = () => {
   // toggle
-  useEffect(() => {
-    document.querySelectorAll(".toggle-relative").forEach((e) => {
-      e.addEventListener("click", () => {
-        if (e.children[0].children[1].classList.contains("hidden")) {
-          e.classList.add("bg-gray-500");
-          e.children[0].children[0].classList.add("hidden");
-          e.children[0].classList.add("toggle-animation-p");
-          e.children[0].classList.remove("rv-toggle-animation-p");
-          e.classList.remove("bg-mb");
-          e.children[0].children[1].classList.remove("hidden");
-        } else {
-          e.classList.add("bg-mb");
-          e.children[0].children[0].classList.remove("hidden");
-          e.children[0].classList.add("rv-toggle-animation-p");
-          e.children[0].classList.remove("toggle-animation-p");
-          e.classList.remove("bg-gray-500");
-          e.children[0].children[1].classList.add("hidden");
-        }
-      });
-    });
-  }, []);
+  const toggle = (e) => {
+    if (e.currentTarget.children[0].children[1].classList.contains("hidden")) {
+      e.currentTarget.classList.add("bg-gray-500");
+      e.currentTarget.children[0].children[0].classList.add("hidden");
+      e.currentTarget.children[0].classList.add("toggle-animation-p");
+      e.currentTarget.children[0].classList.remove("rv-toggle-animation-p");
+      e.currentTarget.classList.remove("bg-mb");
+      e.currentTarget.children[0].children[1].classList.remove("hidden");
+    } else {
+      e.currentTarget.classList.add("bg-mb");
+      e.currentTarget.children[0].children[0].classList.remove("hidden");
+      e.currentTarget.children[0].classList.add("rv-toggle-animation-p");
+      e.currentTarget.children[0].classList.remove("toggle-animation-p");
+      e.currentTarget.classList.remove("bg-gray-500");
+      e.currentTarget.children[0].children[1].classList.add("hidden");
+    }
+
+}
 
   return (
     <>
@@ -40,7 +37,7 @@ const Profilecontent = () => {
               <div className="one">
                 <div className="flex flex-col items-center gap-2  border-0 pr-1 md:border-r">
                   <div className="img m-10 w-40">
-                    <img src="../../public/assets/avatar.png" alt="avatar" />
+                    <img src="/assets/avatar.png" alt="avatar" />
                   </div>
                   <p className="font-bold">Outerbah Mohamed</p>
                   <p className="text-gray-500">Level 20</p>
@@ -72,7 +69,7 @@ const Profilecontent = () => {
                       <span className="text-gray-500 ">Country :</span> Algeria
                     </p>
                     <div className="profile-mini-cards flex justify-center md:block">
-                      <div className="toggle-relative  relative h-6 w-20 cursor-pointer rounded-3xl bg-mb duration-1000">
+                      <div className="toggle-relative  relative h-6 w-20 cursor-pointer rounded-3xl bg-mb duration-1000" onClick={toggle}>
                         <div className="toggle-absolute  absolute right-1 top-1/2 flex h-4 w-4 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                           <FaCheck className="check text-base text-mb" />
                           <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -97,7 +94,7 @@ const Profilecontent = () => {
                       2004/11/08
                     </p>
                     <div className="profile-mini-cards flex justify-center md:block">
-                      <div className="toggle-relative  relative h-6 w-20 cursor-pointer rounded-3xl bg-mb duration-1000">
+                      <div className="toggle-relative  relative h-6 w-20 cursor-pointer rounded-3xl bg-mb duration-1000" onClick={toggle}>
                         <div className="toggle-absolute  absolute right-1 top-1/2 flex h-4 w-4 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                           <FaCheck className="check text-base text-mb" />
                           <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -126,7 +123,7 @@ const Profilecontent = () => {
                       1+
                     </p>
                     <div className="profile-mini-cards flex justify-center md:block">
-                      <div className="toggle-relative  relative h-6 w-20 cursor-pointer rounded-3xl bg-mb duration-1000">
+                      <div className="toggle-relative  relative h-6 w-20 cursor-pointer rounded-3xl bg-mb duration-1000" onClick={toggle}>
                         <div className="toggle-absolute  absolute right-1 top-1/2 flex h-4 w-4 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                           <FaCheck className="check text-base text-mb" />
                           <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -151,7 +148,7 @@ const Profilecontent = () => {
                       Yearly
                     </p>
                     <div className="profile-mini-cards flex justify-center md:block">
-                      <div className="toggle-relative  relative h-6 w-20 cursor-pointer rounded-3xl bg-mb duration-1000">
+                      <div className="toggle-relative  relative h-6 w-20 cursor-pointer rounded-3xl bg-mb duration-1000" onClick={toggle}>
                         <div className="toggle-absolute  absolute right-1 top-1/2 flex h-4 w-4 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                           <FaCheck className="check text-base text-mb" />
                           <FaXmark className="x-mark hidden text-base text-gray-400" />
@@ -224,7 +221,7 @@ const Profilecontent = () => {
                     <div className="card flex flex-col items-center justify-between gap-4  py-4 md:flex-row">
                       <div className="w-20">
                         <img
-                          src="../../public/assets/activity-01.png"
+                          src="/assets/activity-01.png"
                           alt=""
                           className="rounded-lg"
                         />
@@ -247,7 +244,7 @@ const Profilecontent = () => {
                     <div className="card flex flex-col items-center justify-between gap-4 py-4 md:flex-row">
                       <div className="w-20">
                         <img
-                          src="../../public/assets/activity-02.png"
+                          src="/assets/activity-02.png"
                           alt=""
                           className="rounded-lg"
                         />
@@ -268,7 +265,7 @@ const Profilecontent = () => {
                     <div className="card flex flex-col items-center justify-between gap-4  py-4 md:flex-row">
                       <div className="w-20">
                         <img
-                          src="../../public/assets/activity-03.png"
+                          src="/assets/activity-03.png"
                           alt=""
                           className="rounded-lg"
                         />
@@ -289,7 +286,7 @@ const Profilecontent = () => {
                     <div className="card flex flex-col items-center justify-between gap-4  py-4 md:flex-row">
                       <div className="w-20">
                         <img
-                          src="../../public/assets/activity-01.png"
+                          src="/assets/activity-01.png"
                           alt=""
                           className="rounded-lg"
                         />

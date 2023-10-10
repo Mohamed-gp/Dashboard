@@ -16,16 +16,15 @@ const Projectscontent = () => {
                 <p className="font-semibold mb-1">Mohamed Dashboard</p>
                 <p className="text-gray-400">Mohamed Dashboard Project Design And Programming And Hosting</p>
                 <div className="imgs flex -space-x-2 py-9">
-                    <img src="/public/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
-                    <img src="/public/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
+                    <img src="/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
                 </div>
                 <div className="flex justify-end gap-2 py-6 border-y">
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
                 </div>
                 <div className="flex justify-between mt-6 mb-4">
                     <div className="relative  w-36 h-3 rounded-lg bg-gray-400">
@@ -42,14 +41,14 @@ const Projectscontent = () => {
                 <p className="font-semibold mb-1">Academy Portal</p>
                 <p className="text-gray-400">Academy Portal Project Design And Programming</p>
                 <div className="imgs flex -space-x-2 py-9">
-                    <img src="/public/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
-                    <img src="/public/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
+                    <img src="/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
                 </div>
                 <div className="flex justify-end gap-2 py-6 border-y">
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
                 </div>
                 <div className="flex justify-between mt-6 mb-4">
                     <div className="relative  w-36 h-3 rounded-lg bg-gray-400">
@@ -66,16 +65,14 @@ const Projectscontent = () => {
                 <p className="font-semibold mb-1">Mohamed Dashboard</p>
                 <p className="text-gray-400">Mohamed Dashboard Project Design And Programming And Hosting</p>
                 <div className="imgs flex -space-x-2 py-9">
-                    <img src="/public/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
-                    <img src="/public/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
+                    <img src="/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
                 </div>
                 <div className="flex justify-end gap-2 py-6 border-y">
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
                 </div>
                 <div className="flex justify-between mt-6 mb-4">
                     <div className="relative  w-36 h-3 rounded-lg bg-gray-400">
@@ -92,16 +89,15 @@ const Projectscontent = () => {
                 <p className="font-semibold mb-1">Mohamed Dashboard</p>
                 <p className="text-gray-400">Mohamed Dashboard Project Design And Programming And Hosting</p>
                 <div className="imgs flex -space-x-2 py-9">
-                    <img src="/public/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
-                    <img src="/public/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
+                    <img src="/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
                 </div>
                 <div className="flex justify-end gap-2 py-6 border-y">
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
                 </div>
                 <div className="flex justify-between mt-6 mb-4">
                     <div className="relative  w-36 h-3 rounded-lg bg-gray-400">
@@ -118,16 +114,15 @@ const Projectscontent = () => {
                 <p className="font-semibold mb-1">Mohamed Dashboard</p>
                 <p className="text-gray-400">Mohamed Dashboard Project Design And Programming And Hosting</p>
                 <div className="imgs flex -space-x-2 py-9">
-                    <img src="/public/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
-                    <img src="/public/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
+                    <img src="/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
                 </div>
                 <div className="flex justify-end gap-2 py-6 border-y">
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
                 </div>
                 <div className="flex justify-between mt-6 mb-4">
                     <div className="relative  w-36 h-3 rounded-lg bg-gray-400">
@@ -144,16 +139,15 @@ const Projectscontent = () => {
                 <p className="font-semibold mb-1">Mohamed Dashboard</p>
                 <p className="text-gray-400">Mohamed Dashboard Project Design And Programming And Hosting</p>
                 <div className="imgs flex -space-x-2 py-9">
-                    <img src="/public/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
-                    <img src="/public/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
+                    <img src="/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
                 </div>
                 <div className="flex justify-end gap-2 py-6 border-y">
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
                 </div>
                 <div className="flex justify-between mt-6 mb-4">
                     <div className="relative  w-36 h-3 rounded-lg bg-gray-400">
@@ -170,16 +164,15 @@ const Projectscontent = () => {
                 <p className="font-semibold mb-1">Mohamed Dashboard</p>
                 <p className="text-gray-400">Mohamed Dashboard Project Design And Programming And Hosting</p>
                 <div className="imgs flex -space-x-2 py-9">
-                    <img src="/public/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
-                    <img src="/public/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
+                    <img src="/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
                 </div>
                 <div className="flex justify-end gap-2 py-6 border-y">
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
                 </div>
                 <div className="flex justify-between mt-6 mb-4">
                     <div className="relative  w-36 h-3 rounded-lg bg-gray-400">
@@ -196,16 +189,15 @@ const Projectscontent = () => {
                 <p className="font-semibold mb-1">Mohamed Dashboard</p>
                 <p className="text-gray-400">Mohamed Dashboard Project Design And Programming And Hosting</p>
                 <div className="imgs flex -space-x-2 py-9">
-                    <img src="/public/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
-                    <img src="/public/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
-                    <img src="/public/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-01.png" alt="team-1" className="w-10 rounded-full"/>
+                    <img src="/assets/team-02.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-03.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
+                    <img src="/assets/team-04.png" alt="team-1" className="w-10 border-l-2 rounded-full"/>
                 </div>
                 <div className="flex justify-end gap-2 py-6 border-y">
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Design</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
-                    <span className="px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Programming</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Hosting</span>
+                    <span className="px-2 text-xs sm:text-base sm:px-3 py-1 bg-sw rounded-lg dark:bg-white dark:text-md ">Marketing</span>
                 </div>
                 <div className="flex justify-between mt-6 mb-4">
                     <div className="relative  w-36 h-3 rounded-lg bg-gray-400">

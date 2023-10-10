@@ -12,7 +12,7 @@ const Planscontent = () => {
       <div className="plans-content">
         <div className="content px-4 py-5 dark:bg-sd dark:text-white">
           <p className="title relative w-fit py-3 text-2xl font-bold text-black dark:text-white">
-            Files
+            Plans
           </p>
           <div className="main-cards-container project-card relative mt-6 flex flex-wrap justify-start gap-x-4 gap-y-4 dark:text-white">
               <div className="main-card  files-card card-one relative rounded-2xl bg-white p-6 dark:bg-md">

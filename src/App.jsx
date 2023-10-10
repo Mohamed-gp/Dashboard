@@ -57,32 +57,35 @@ const App = () => {
   useEffect(() => {
     setInterval(() => {
       setloading(false)
-    }, 100);
+    }, 1000);
   },[])
   return (
     <>
 
-                <BrowserRouter>
+      {loading ? (
+        <Preloader />
+      ) : (
+              <BrowserRouter>
 
-                  <div className="main-flex flex">
-                          <Nav activeweb={location.pathname.slice(1)}/>
-                          <div className="right-side flex-1">
-                              <Header/>
-                              <Routes>
-                                  <Route path="/" element={<Dashboardcontent/>}/>
-                                  <Route path="/courses" element={<Coursescontent/>}/>
-                                  <Route path="/settings" element={<Settingscontent/>}/>
-                                  <Route path="/profile" element={<Profilecontent/>}/>
-                                  <Route path="/projects" element={<Projectscontent/>}/>
-                                  <Route path="/friends" element={<Friendscontent/>}/>
-                                  <Route path="/files" element={<Filescontent/>}/>
-                                  <Route path="/plans" element={<Planscontent/>}/>
-                              </Routes>
-                          </div>
-                  </div>
+              <div className="main-flex flex">
+                      <Nav/>
+                      <div className="right-side flex-1">
+                          <Header/>
+                          <Routes>
+                              <Route path="/" element={<Dashboardcontent/>}/>
+                              <Route path="/courses" element={<Coursescontent/>}/>
+                              <Route path="/settings" element={<Settingscontent/>}/>
+                              <Route path="/profile" element={<Profilecontent/>}/>
+                              <Route path="/projects" element={<Projectscontent/>}/>
+                              <Route path="/friends" element={<Friendscontent/>}/>
+                              <Route path="/files" element={<Filescontent/>}/>
+                              <Route path="/plans" element={<Planscontent/>}/>
+                          </Routes>
+                      </div>
+              </div>
 
-                </BrowserRouter>
-      
+              </BrowserRouter>
+      )}
     
     </>
   );

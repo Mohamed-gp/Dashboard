@@ -17,7 +17,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -37,7 +37,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/avi.svg"
+                      src="/assets/avi.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -57,7 +57,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/dll.svg"
+                      src="/assets/dll.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -77,7 +77,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/eps.svg"
+                      src="/assets/eps.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -97,7 +97,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/png.svg"
+                      src="/assets/png.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -117,7 +117,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/psd.svg"
+                      src="/assets/psd.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -137,7 +137,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/sql.svg"
+                      src="/assets/sql.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -157,7 +157,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/txt.svg"
+                      src="/assets/txt.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -177,7 +177,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/zip.svg"
+                      src="/assets/zip.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -197,7 +197,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -217,7 +217,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -237,7 +237,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -257,7 +257,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -277,7 +277,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -297,7 +297,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -317,7 +317,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -337,7 +337,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />
@@ -357,7 +357,7 @@ const Projectscontent = () => {
                 <div className="flex-col items-center leading-relaxed">
                   <div className="img mb-2 flex justify-center">
                     <img
-                      src="/public/assets/pdf.svg"
+                      src="/assets/pdf.svg"
                       alt="friend-on2"
                       className="w-24"
                     />

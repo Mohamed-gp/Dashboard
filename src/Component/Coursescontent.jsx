@@ -15,7 +15,7 @@ const Coursescontent = () => {
                 <div className="main-cards-container mt-6 flex flex-wrap justify-between gap-y-4">
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-01.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-01.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -44,12 +44,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-01.png" className="" alt="team-one" />
+                            <img src="/assets/team-01.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-02.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-02.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -78,12 +78,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-02.png" className="" alt="team-one" />
+                            <img src="/assets/team-02.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-03.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-03.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -112,12 +112,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-01.png" className="" alt="team-one" />
+                            <img src="/assets/team-01.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-04.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-04.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -146,12 +146,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-04.png" className="" alt="team-one" />
+                            <img src="/assets/team-04.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-05.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-05.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -180,12 +180,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-01.png" className="" alt="team-one" />
+                            <img src="/assets/team-01.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-01.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-01.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -214,12 +214,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-01.png" className="" alt="team-one" />
+                            <img src="/assets/team-01.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-02.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-02.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -248,12 +248,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-02.png" className="" alt="team-one" />
+                            <img src="/assets/team-02.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-03.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-03.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -282,12 +282,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-01.png" className="" alt="team-one" />
+                            <img src="/assets/team-01.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-04.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-04.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -316,12 +316,12 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-04.png" className="" alt="team-one" />
+                            <img src="/assets/team-04.png" className="" alt="team-one" />
                         </div>
                     </div>
                     <div className="main-card dark:bg-md text-center md:text-left bg-white  pb-4 rounded-lg relative">
                         <div className="img relative ">
-                            <img src="../../public/assets/course-05.jpg" alt="course1" className="w-full rounded-t-lg"/>
+                            <img src="/assets/course-05.jpg" alt="course1" className="w-full rounded-t-lg"/>
                         </div>
                         <div className="p-4 flex flex-col gap-2">
                             
@@ -350,7 +350,7 @@ const Coursescontent = () => {
                             </div>
                         </div>
                         <div className="img-absolute absolute top-5 left-5 w-20 overflow-hidden rounded-full border-2 border-white">
-                            <img src="../../public/assets/team-01.png" className="" alt="team-one" />
+                            <img src="/assets/team-01.png" className="" alt="team-one" />
                         </div>
                     </div>
                     

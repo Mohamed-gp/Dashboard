@@ -9,7 +9,7 @@ html{
 }
 // this will remove the default colors
 ::-webkit-scrollbar{
-    width: 1.5vw;
+    width: .7vw;
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgba(0, 117, 255,.9);
@@ -78,7 +78,7 @@ nav{
     
 }
 
-.active-page{
+.active:not(.home-link){
     background-color: rgba(238, 235, 235, 0.657);
 }
 .page{

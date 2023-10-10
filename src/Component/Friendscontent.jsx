@@ -17,7 +17,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-01.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-01.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
@@ -39,7 +39,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-02.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-02.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
@@ -61,7 +61,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-03.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-03.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
@@ -83,7 +83,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-04.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-04.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
@@ -105,7 +105,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-05.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-05.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
@@ -127,7 +127,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-01.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-01.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
@@ -148,7 +148,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-02.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-02.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
@@ -169,7 +169,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-03.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-03.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
@@ -190,7 +190,7 @@ const Projectscontent = () => {
               <div className="main-card dark:bg-md card-one relative rounded-2xl bg-white p-6">
                 <div className="flex-col items-center">
                     <div className="img flex justify-center mb-2">
-                        <img src="/public/assets/friend-04.jpg" alt="friend-on2" className="rounded-full w-24"/>
+                        <img src="/assets/friend-04.jpg" alt="friend-on2" className="rounded-full w-24"/>
                     </div>
                         <p className="text-center font-bold"> John Doe</p>
                         <p className="text-center text-gray-400">JavaScript Developer</p>
